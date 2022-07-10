@@ -38,18 +38,18 @@
 
 
 :root {
-    --main-color: #232121;
-    --background-color: #DED4D2;
-    --text-color: #000000;
+    --main-color: #B91616;
+    --background-color: #101010;
+    --text-color: #FFFFFF;
 
-    --dropdown-hover-background-color: #161616;
+    --dropdown-hover-background-color: #9d0000;
+    
+    @media (prefers-color-scheme: light) {
+        --main-color: #232121;
+        --background-color: #DED4D2;
+        --text-color: #000000;
 
-    @media (prefers-color-scheme: dark) {
-        --main-color: #B91616;
-        --background-color: #101010;
-        --text-color: #FFFFFF;
-
-        --dropdown-hover-background-color: #9d0000;
+        --dropdown-hover-background-color: #161616;
     }
 }
 
