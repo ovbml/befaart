@@ -1,0 +1,81 @@
+@font-face {
+    src: url('/fonts/Acworth/Acworth Bold.otf');
+    font-family: Acworth;
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('/fonts/KyivType Sans/KyivType Sans Black.otf');
+    font-family: KyivType Sans;
+    font-weight: 700;
+}
+@font-face {
+    src: url('/fonts/KyivType Sans/KyivType Sans Medium.otf');
+    font-family: KyivType Sans;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('/fonts/Geometria/Geometria ExtraBold.ttf');
+    font-family: Geometria;
+    font-weight: 800;
+}
+@font-face {
+    src: url('/fonts/Geometria/Geometria Bold.ttf');
+    font-family: Geometria;
+    font-weight: 700;
+}
+@font-face {
+    src: url('/fonts/Geometria/Geometria Medium.ttf');
+    font-family: Geometria;
+    font-weight: 500;
+}
+@font-face {
+    src: url('/fonts/Geometria/Geometria.ttf');
+    font-family: Geometria;
+    font-weight: 400;
+}
+
+
+:root {
+    --main-color: #232121;
+    --background-color: #DED4D2;
+    --text-color: #000000;
+
+    --dropdown-hover-background-color: #161616;
+
+    @media (prefers-color-scheme: dark) {
+        --main-color: #B91616;
+        --background-color: #101010;
+        --text-color: #FFFFFF;
+
+        --dropdown-hover-background-color: #9d0000;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+* {
+    line-height: initial;
+}
+
+a {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #16b9b9;
+        transition: width .2s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
