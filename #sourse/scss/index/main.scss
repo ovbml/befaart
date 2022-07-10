@@ -97,13 +97,13 @@
         background-size: cover;
         background-position: 50% 50%;
         &_1 {
-            background-image: url('/img/home-images/first img.png');
+            background-image: url('../img/home-images/first img.png');
         }
         &_2 {
-            background-image: url('/img/home-images/second img.png');
+            background-image: url('../img/home-images/second img.png');
         }
         &_m {
-            background-image: url('/img/home-images/main img.png');
+            background-image: url('../img/home-images/main img.png');
         }
     }
     &__images_home &__images-column_left &__image {
@@ -369,7 +369,7 @@
             top: 0;
             @include adaptiv-value('width', 985, 302);
             height: 100%;
-            background-image: url('/img/me.png');
+            background-image: url('../img/me.png');
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: cover;
